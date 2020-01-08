@@ -21,8 +21,8 @@ class CashRegister
   end
   
   def apply_discount
-    @total *= 0.8
     if employee_discount
+      @total *= 0.8
       "After the discount, the total comes to $#{@total.round}."
     else
       "There is no discount to apply."
